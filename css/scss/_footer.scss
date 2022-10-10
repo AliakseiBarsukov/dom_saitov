@@ -1,0 +1,137 @@
+.footer {
+    display: flex;
+    background: #333333;
+    align-self: flex-start;
+    max-width: 100%;
+    padding-top: 100px;
+
+    &__wrapper {
+        display: flex;
+        padding-bottom: 80px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    &__contacts {
+        align-self: flex-start;
+        flex-direction: column;
+        align-items: center;
+        max-width: 194px;
+        margin-right: 175px;
+
+    }
+    &__logo {
+        margin-bottom: 57px;
+    }
+    &_region {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 20px;
+    }
+    &__region_link {
+        font-size: 14px;
+        color: #fff;
+        &:hover {
+            color: #FF5900;
+        }
+    }
+    &__phone {
+        font-size: 14px;
+        color: #fff;
+        &:hover {
+            color: #FF5900;
+        }
+    }
+    &__adres {
+        font-size: 14px;
+        color: #fff;
+        margin-bottom: 12px;
+    }
+    &__number {
+        margin-bottom: 28px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    &__link {
+        &:hover {
+            color: red;
+        }
+    }
+
+
+    &__content{
+        font-size: 14px;
+        display: flex;
+        gap: 107px
+    }
+    &__block{
+        max-width: 250px;
+
+    }
+    &__block_title{
+        margin-bottom: 24px;
+        color: rgba(255, 255, 255, 0.5);
+
+    }
+    &__block_list{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__block_link{
+        font-size: 14px;
+        color:#fff;
+        &:hover {
+            color: #FF5900;
+        }
+
+    }
+
+    &__copirait {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 16px;
+        color:rgba(255, 255, 255, 0.3);
+        font-size: 14px;
+
+    }
+    &_copirait__link {
+        color:rgba(255, 255, 255, 0.3)
+    }
+
+}
+
+@media (max-width: 1230px) {
+    .footer {
+        &__contacts {
+            margin-right: 70px;
+        }
+        &__content {
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__block {
+            max-width: 200px;
+        }
+    }
+}
+@media (max-width: 769px) {
+    .footer {
+        &__wrapper {
+            flex-direction: column;
+            gap: 40px;
+        }
+        &__contacts {
+            margin: 0 auto;
+        }
+    }
+}
+@media (max-width: 695px) {
+    .footer {
+        &__copirait {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}

@@ -1,6 +1,7 @@
 @import '_normalize.css';
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *, *:after, *:before {
@@ -687,5 +688,122 @@ img {
 @media (max-width: 360px) {
   .advantages__wrapper {
     gap: 30px;
+  }
+}
+.footer {
+  display: flex;
+  background: #333333;
+  align-self: flex-start;
+  max-width: 100%;
+  padding-top: 100px;
+}
+.footer__wrapper {
+  display: flex;
+  padding-bottom: 80px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer__contacts {
+  align-self: flex-start;
+  flex-direction: column;
+  align-items: center;
+  max-width: 194px;
+  margin-right: 175px;
+}
+.footer__logo {
+  margin-bottom: 57px;
+}
+.footer_region {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+}
+.footer__region_link {
+  font-size: 14px;
+  color: #fff;
+}
+.footer__region_link:hover {
+  color: #FF5900;
+}
+.footer__phone {
+  font-size: 14px;
+  color: #fff;
+}
+.footer__phone:hover {
+  color: #FF5900;
+}
+.footer__adres {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.footer__number {
+  margin-bottom: 28px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer__link:hover {
+  color: red;
+}
+.footer__content {
+  font-size: 14px;
+  display: flex;
+  gap: 107px;
+}
+.footer__block {
+  max-width: 250px;
+}
+.footer__block_title {
+  margin-bottom: 24px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer__block_list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.footer__block_link {
+  font-size: 14px;
+  color: #fff;
+}
+.footer__block_link:hover {
+  color: #FF5900;
+}
+.footer__copirait {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+}
+.footer_copirait__link {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 1230px) {
+  .footer__contacts {
+    margin-right: 70px;
+  }
+  .footer__content {
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__block {
+    max-width: 200px;
+  }
+}
+@media (max-width: 769px) {
+  .footer__wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer__contacts {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 695px) {
+  .footer__copirait {
+    flex-direction: column;
+    gap: 10px;
   }
 }/*# sourceMappingURL=index.css.map */
