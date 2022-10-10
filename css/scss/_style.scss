@@ -1,0 +1,95 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h1, h2,h3, h4, p, ul {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  font: inherit;
+}
+
+input, textarea {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 20px 40px;
+  border-radius: 100px;
+  backdrop-filter: blur(2.5px);
+}
+
+.overflow-hidden {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 120%;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 490px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 360px) {
+
+    .title {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+}
+

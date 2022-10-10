@@ -1,0 +1,95 @@
+.cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 32px;
+        max-width: 360px;
+        width: 100%;
+        min-height: 486px;
+
+        &_one {
+            background-image: url('./../../assets/img/one.jpeg');
+            background-size: cover;
+        }
+        &_two {
+            background-image: url('./../../assets/img/two.jpeg');
+            background-size: cover;
+        }
+        &_three {
+            background-image: url('./../../assets/img/three.jpeg');
+            background-size: cover;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 28px;
+    }
+    &__promo {
+        font-size: 16px;
+        line-height: 140%;
+        color: #FFFFFF;
+        padding: 20px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 140%;
+        color: rgba(255, 255, 255, 0.5);
+        padding: 20px 0 28px;
+    }
+    &__sale {
+        line-height: 140%;
+        color: #FFFFFF;
+        margin-bottom: 36px;
+    }
+    &__btn {
+        color: #FF5900;
+        padding: 16px 69.5px;
+        border: 1px solid #FF5900;
+        border-radius: 100px; 
+        margin-top: auto;  
+        transition: border, color .2s ease-in-out;
+
+        &:hover {
+            border: 1px solid #fff;
+            color: #fff;
+
+        }
+    }
+}
+
+@media (max-width: 1180px) {
+    .cart {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .cart {
+
+        &__btn {
+            color: #FF5900;
+            padding: 16px 13.5px;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            padding: 40px 32px;
+            max-width: 340px;
+        }
+    }
+}
+

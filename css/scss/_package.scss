@@ -1,0 +1,28 @@
+.package {
+    margin-top: 120px;
+    margin-bottom: 60px;
+
+    &__title {
+
+        & span {
+            color: #FF5900;
+        }
+    }
+}
+
+@media (max-width: 490px) {
+    .package {
+        margin-top: 40px;
+
+    }
+}
+@media (max-width: 350px) {
+    .package {
+        margin-top: 40px;
+
+        &__title {
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+    }
+}

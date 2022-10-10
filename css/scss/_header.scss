@@ -1,0 +1,138 @@
+.header {
+    
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        padding: 26px 0;
+    }
+
+    &__tagline {
+        margin-left: auto;
+        font-weight: 400;
+        font-size: 14px;
+        opacity: 0.7;
+        letter-spacing: 0.9px;
+    }
+
+    &__phones {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-left: 122px;
+    }
+
+    &__link {
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        transition: color .2s ease-in-out;
+
+        &:hover {
+            color: #FF5900;
+        }
+    }
+
+    &__request-call {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 16px 28px;
+        color: #FF5900;
+        letter-spacing: 0.7px;
+        border: 1px solid #FF5900;
+        border-radius: 100px;
+        transition: color, background-color .3s ease-in-out;
+
+        &:hover {
+            color: #fff;
+            background-color: #FF5900;
+        }
+    }
+
+}
+
+@media (max-width: 1165px) {
+    .header {
+
+        &__phones {
+            margin-left: auto;
+        }
+
+    }
+}
+@media (max-width: 1020px) {
+    .header {
+
+        &__wrapper {
+            padding: 15px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            'logo tagline'
+            '. phones'
+        }
+
+        &__logo {
+            grid-area: logo;
+
+        }
+        &__tagline {
+            grid-area: tagline;
+
+        }
+        &__phones {
+            grid-area: phones;
+            grid-column: span 2;
+        }
+
+    }
+
+}
+
+@media (max-width: 768px) {
+    .header {
+        
+
+
+        &__link {
+            font-size: 14px;
+        }
+
+        &__request-call {
+            font-size: 14px;
+            padding: 10px 18px;
+        }
+    }
+}
+
+@media (max-width: 559px) {
+    .header {
+
+        &__wrapper {
+            padding: 10px 0;
+            display: flex;
+        }
+        &__tagline {
+            display: none;
+        }
+
+        &__phones {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
+
+@media (max-width:440px) {
+    .header {
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__phones {
+            margin: 10px auto 0;
+        }
+    }
+}
